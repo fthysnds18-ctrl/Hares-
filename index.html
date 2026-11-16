@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>حارس Hares</title>
+<style>
+body{font-family:Arial;background:#f1f5f9;margin:0;color:#0f2942}
+header{background:#0f2942;color:white;padding:25px;text-align:center}
+main{padding:16px}
+.card{background:white;padding:20px;margin:14px 0;border-radius:12px;box-shadow:0 2px 8px #ddd}
+button{background:#0f2942;color:white;border:0;padding:12px 20px;border-radius:8px}
+.details{display:none;margin-top:15px;color:#059669}
+</style>
+</head>
+<body>
+<header>
+<h1>حارس Hares</h1>
+<p>نظام إدارة مراقبي الأمن</p>
+</header>
+<main>
+<div class="card">
+<h3>المواقع الأمنية</h3>
+<button onclick="show(1)">عرض المواقع</button>
+<div id="d1" class="details">الموقع الأول<br>الموقع الثاني<br>الموقع الثالث</div>
+</div>
+<div class="card">
+<h3>المراقبون</h3>
+<button onclick="show(2)">عرض المراقبين</button>
+<div id="d2" class="details">مراقب 1<br>مراقب 2<br>مراقب 3</div>
+</div>
+<div class="card">
+<h3>المناوبات</h3>
+<button onclick="show(3)">عرض المناوبات</button>
+<div id="d3" class="details">صباحية<br>مسائية<br>ليلية</div>
+</div>
+</main>
+<script>
+function show(n){
+let x=document.getElementById("d"+n);
+x.style.display=x.style.display==="block"?"none":"block";
+}
+</script>
+</body>
+</html>
